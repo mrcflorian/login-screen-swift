@@ -10,7 +10,7 @@ import UIKit
 
 let kFacebookLoginButtonBackgroundColor = UIColor(colorLiteralRed: 59/255, green: 89/255, blue: 153/255, alpha: 1)
 let kFacebookLoginButtonTintColor = UIColor.white
-let kFacebookLoginButtonCornerRadius: CGFloat = 15.0
+let kFacebookLoginButtonCornerRadius: CGFloat = 13.0
 
 class FacebookLoginButton: UIButton {
 
@@ -20,9 +20,9 @@ class FacebookLoginButton: UIButton {
     }
 
     private func configureUI() {
-        self.backgroundColor = kLoginButtonBackgroundColor
-        self.layer.cornerRadius = kLoginButtonCornerRadius
-        self.tintColor = kLoginButtonTintColor
+        self.backgroundColor = kFacebookLoginButtonBackgroundColor
+        self.layer.cornerRadius = kFacebookLoginButtonCornerRadius
+        self.tintColor = kFacebookLoginButtonTintColor
         self.titleLabel?.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 12)
     }
 

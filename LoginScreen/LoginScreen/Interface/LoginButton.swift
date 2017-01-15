@@ -10,7 +10,7 @@ import UIKit
 
 let kLoginButtonBackgroundColor = UIColor(colorLiteralRed: 31/255, green: 75/255, blue: 164/255, alpha: 1)
 let kLoginButtonTintColor = UIColor.white
-let kLoginButtonCornerRadius: CGFloat = 15.0
+let kLoginButtonCornerRadius: CGFloat = 13.0
 
 class LoginButton: UIButton {
 
@@ -23,7 +23,7 @@ class LoginButton: UIButton {
         self.backgroundColor = kLoginButtonBackgroundColor
         self.layer.cornerRadius = kLoginButtonCornerRadius
         self.tintColor = kLoginButtonTintColor
-        self.titleLabel?.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 12)
+        self.titleLabel?.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 14)
     }
 
 }

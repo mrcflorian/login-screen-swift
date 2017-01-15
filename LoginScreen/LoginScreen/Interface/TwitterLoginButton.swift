@@ -10,7 +10,7 @@ import UIKit
 
 let kTwitterLoginButtonBackgroundColor = UIColor(colorLiteralRed: 85/255, green: 172/255, blue: 239/255, alpha: 1)
 let kTwitterLoginButtonTintColor = UIColor.white
-let kTwitterLoginButtonCornerRadius: CGFloat = 15.0
+let kTwitterLoginButtonCornerRadius: CGFloat = 13.0
 
 class TwitterLoginButton: UIButton {
 

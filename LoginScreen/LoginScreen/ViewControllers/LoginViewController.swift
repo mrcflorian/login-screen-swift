@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         if let _ = AccessToken.current {
-            didLoginWithFacebook()
+            alreadyLoggedInWithFacebook()
             return;
         }
     }
@@ -51,5 +51,9 @@ class LoginViewController: UIViewController {
                 }
             })
         }
+    }
+
+    private func alreadyLoggedInWithFacebook() {
+
     }
 }
