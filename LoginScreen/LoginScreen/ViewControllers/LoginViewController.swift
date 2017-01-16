@@ -17,16 +17,18 @@ class LoginViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
 
+    // Facebook login permissions
     // Add extra permissions you need
     // Remove permissions you don't need
     private let readPermissions: [ReadPermission] = [ .publicProfile, .email, .userFriends, .custom("user_posts") ]
 
     @IBAction func didTapLoginButton(_ sender: LoginButton) {
         // Regular login attempt. Add the code to handle the login by email and password.
-        guard let _ = usernameTextField.text, let _ = passwordTextField.text else {
-            // You could show an error message here, since both fields are empty
+        guard let email = usernameTextField.text, let pass = passwordTextField.text else {
+            // It should never get here
             return
         }
+        didLogin(method: "email and password", info: "Email: \(email) \n Password: \(pass)")
     }
 
     @IBAction func didTapFacebookLoginButton(_ sender: FacebookLoginButton) {
