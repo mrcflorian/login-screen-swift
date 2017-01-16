@@ -51,6 +51,11 @@ class LoginViewController: UIViewController {
         })
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        usernameTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
+
     private func didReceiveFacebookLoginResult(loginResult: LoginResult) {
         switch loginResult {
         case .success:

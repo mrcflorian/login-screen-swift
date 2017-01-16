@@ -23,31 +23,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="night-stars-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="cja-Kd-yj9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rS5-aT-149" userLabel="LoginFormContainerView">
-                                <rect key="frame" x="36" y="203" width="304" height="134"/>
+                                <rect key="frame" x="36" y="153" width="304" height="134"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtV-qs-nyA" userLabel="Username Text Field">
-                                        <rect key="frame" x="53" y="20" width="200" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtV-qs-nyA" userLabel="Username Text Field" customClass="LoginTextField" customModule="LoginScreen" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="19.5" width="264" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="oj2-Q0-RGU"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKT-fJ-vfo" userLabel="Password Text Field">
-                                        <rect key="frame" x="53" y="57" width="200" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKT-fJ-vfo" userLabel="Password Text Field" customClass="LoginTextField" customModule="LoginScreen" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="57" width="264" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="a81-Ip-sSE"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeK-9E-LJ2" customClass="LoginButton" customModule="LoginScreen" customModuleProvider="target">
-                                        <rect key="frame" x="52" y="101" width="200" height="27"/>
+                                        <rect key="frame" x="20" y="101" width="264" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="YtO-3O-7QX"/>
+                                            <constraint firstAttribute="height" constant="30" id="YtO-3O-7QX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                         <state key="normal" title="Login"/>
@@ -57,25 +72,25 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="gtV-qs-nyA" firstAttribute="leading" secondItem="rS5-aT-149" secondAttribute="leading" constant="53" id="052-bL-JQB"/>
-                                    <constraint firstItem="DKT-fJ-vfo" firstAttribute="leading" secondItem="rS5-aT-149" secondAttribute="leading" constant="53" id="5Ze-FS-Xfp"/>
+                                    <constraint firstItem="gtV-qs-nyA" firstAttribute="leading" secondItem="rS5-aT-149" secondAttribute="leading" constant="20" id="052-bL-JQB" userLabel="Username Text Field.leading = leading + 40"/>
+                                    <constraint firstItem="DKT-fJ-vfo" firstAttribute="leading" secondItem="rS5-aT-149" secondAttribute="leading" constant="20" id="5Ze-FS-Xfp"/>
                                     <constraint firstItem="gtV-qs-nyA" firstAttribute="top" secondItem="rS5-aT-149" secondAttribute="top" constant="20" id="G1G-zw-3Yg"/>
                                     <constraint firstAttribute="height" constant="133.5" id="Q5X-zm-VSN"/>
                                     <constraint firstItem="PeK-9E-LJ2" firstAttribute="centerX" secondItem="rS5-aT-149" secondAttribute="centerX" id="UL5-dI-KjY"/>
                                     <constraint firstItem="DKT-fJ-vfo" firstAttribute="top" secondItem="gtV-qs-nyA" secondAttribute="bottom" constant="7" id="ULl-oa-zZk"/>
-                                    <constraint firstAttribute="trailing" secondItem="gtV-qs-nyA" secondAttribute="trailing" constant="51" id="lWY-nc-sTU"/>
-                                    <constraint firstAttribute="trailing" secondItem="DKT-fJ-vfo" secondAttribute="trailing" constant="51" id="qdW-Bc-7uY"/>
+                                    <constraint firstAttribute="trailing" secondItem="gtV-qs-nyA" secondAttribute="trailing" constant="20" id="lWY-nc-sTU"/>
+                                    <constraint firstAttribute="trailing" secondItem="DKT-fJ-vfo" secondAttribute="trailing" constant="20" id="qdW-Bc-7uY"/>
                                     <constraint firstItem="PeK-9E-LJ2" firstAttribute="top" secondItem="DKT-fJ-vfo" secondAttribute="bottom" constant="14" id="tgS-yu-raJ"/>
                                     <constraint firstItem="PeK-9E-LJ2" firstAttribute="width" secondItem="DKT-fJ-vfo" secondAttribute="width" id="zM9-oE-sHz"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRp-P8-73M" userLabel="SocialButtonsContainerView">
-                                <rect key="frame" x="88" y="375" width="200" height="64"/>
+                                <rect key="frame" x="88" y="322" width="200" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVl-gf-Zgk" userLabel="TwitterButton" customClass="TwitterLoginButton" customModule="LoginScreen" customModuleProvider="target">
-                                        <rect key="frame" x="105" y="18.5" width="95" height="27"/>
+                                        <rect key="frame" x="105" y="17" width="95" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="5O7-Z5-pr8"/>
+                                            <constraint firstAttribute="height" constant="30" id="5O7-Z5-pr8"/>
                                             <constraint firstAttribute="width" constant="95" id="E1b-py-eFX"/>
                                         </constraints>
                                         <state key="normal" image="twitter-icon"/>
@@ -84,10 +99,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEF-Rt-Bl3" userLabel="FacebookButton" customClass="FacebookLoginButton" customModule="LoginScreen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="18.5" width="95" height="27"/>
+                                        <rect key="frame" x="0.0" y="17" width="95" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="95" id="ECf-Oz-1cR"/>
-                                            <constraint firstAttribute="height" constant="27" id="L1E-KY-T6U"/>
+                                            <constraint firstAttribute="height" constant="30" id="L1E-KY-T6U"/>
                                         </constraints>
                                         <state key="normal" image="facebook-icon"/>
                                         <connections>
@@ -106,7 +121,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or connect with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwU-xu-6Uy" userLabel="ConectWithLabel">
-                                <rect key="frame" x="0.0" y="354" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="301" width="375" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="eNd-ef-jrk"/>
                                 </constraints>
@@ -114,14 +129,14 @@
                                 <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS App Templates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIg-Zq-ngy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iosapptemplates.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIg-Zq-ngy">
                                 <rect key="frame" x="0.0" y="103" width="375" height="42"/>
                                 <color key="tintColor" red="0.12156862745098039" green="0.29411764705882354" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="sJT-mP-DZa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                <color key="textColor" red="0.12156862745098039" green="0.29411764705882354" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -132,11 +147,15 @@
                             <constraint firstItem="KRp-P8-73M" firstAttribute="centerX" secondItem="4CQ-lm-TvN" secondAttribute="centerX" id="Bun-aQ-Grb"/>
                             <constraint firstItem="fwU-xu-6Uy" firstAttribute="centerX" secondItem="4CQ-lm-TvN" secondAttribute="centerX" id="DwO-ap-QdQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rS5-aT-149" secondAttribute="trailing" constant="19" id="F5x-dY-hHQ"/>
+                            <constraint firstItem="cja-Kd-yj9" firstAttribute="height" secondItem="4CQ-lm-TvN" secondAttribute="height" id="Lc8-xc-ray"/>
                             <constraint firstItem="OIg-Zq-ngy" firstAttribute="top" secondItem="NSY-h8-A2N" secondAttribute="bottom" multiplier="4" constant="23" id="R8Y-OU-Y7I"/>
                             <constraint firstItem="fwU-xu-6Uy" firstAttribute="top" secondItem="rS5-aT-149" secondAttribute="bottom" multiplier="1.05" id="S7r-BK-FwG"/>
+                            <constraint firstItem="cja-Kd-yj9" firstAttribute="width" secondItem="4CQ-lm-TvN" secondAttribute="width" id="VGd-88-sK2"/>
                             <constraint firstItem="fwU-xu-6Uy" firstAttribute="width" secondItem="4CQ-lm-TvN" secondAttribute="width" id="Z5X-CH-d3T"/>
                             <constraint firstItem="OIg-Zq-ngy" firstAttribute="width" secondItem="4CQ-lm-TvN" secondAttribute="width" id="l31-3C-V63"/>
-                            <constraint firstItem="rS5-aT-149" firstAttribute="top" secondItem="OIg-Zq-ngy" secondAttribute="bottom" multiplier="1.4" id="yfB-je-8qc"/>
+                            <constraint firstItem="cja-Kd-yj9" firstAttribute="centerY" secondItem="4CQ-lm-TvN" secondAttribute="centerY" id="lNB-FM-L2y"/>
+                            <constraint firstItem="cja-Kd-yj9" firstAttribute="centerX" secondItem="4CQ-lm-TvN" secondAttribute="centerX" id="pUI-wW-1NU"/>
+                            <constraint firstItem="rS5-aT-149" firstAttribute="top" secondItem="OIg-Zq-ngy" secondAttribute="bottom" multiplier="1.05" id="yfB-je-8qc"/>
                             <constraint firstItem="OIg-Zq-ngy" firstAttribute="centerX" secondItem="4CQ-lm-TvN" secondAttribute="centerX" id="zWr-Y2-SSG"/>
                         </constraints>
                     </view>
@@ -152,6 +171,7 @@
     </scenes>
     <resources>
         <image name="facebook-icon" width="17" height="17"/>
+        <image name="night-stars-wallpaper" width="320" height="568"/>
         <image name="twitter-icon" width="17" height="17"/>
     </resources>
 </document>
