@@ -10,6 +10,10 @@ target 'LoginScreen' do
   pod 'FacebookLogin'
   pod 'FacebookShare'
 
-	pod 'AFNetworking'
+  pod 'AFNetworking'
+
+  pod 'Fabric'
+  pod 'TwitterKit'
+  pod 'TwitterCore'
 
 end

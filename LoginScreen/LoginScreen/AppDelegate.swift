@@ -6,9 +6,11 @@
 //  Copyright © 2017 iOS App Templates. All rights reserved.
 //
 
+import Fabric
 import FacebookCore
 import FacebookLogin
 import FacebookShare
+import TwitterKit
 import UIKit
 
 @UIApplicationMain
@@ -18,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Fabric.with([Twitter.self])
         return SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 

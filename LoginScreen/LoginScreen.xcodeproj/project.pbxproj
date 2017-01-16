@@ -21,8 +21,6 @@
 		177586DB1E2C2D730031F41A /* FacebookUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177586DA1E2C2D730031F41A /* FacebookUser.swift */; };
 		177586DD1E2C2D7F0031F41A /* FacebookPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177586DC1E2C2D7F0031F41A /* FacebookPost.swift */; };
 		177586DF1E2C2DCF0031F41A /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177586DE1E2C2DCF0031F41A /* NetworkingManager.swift */; };
-		177586E11E2C2F7F0031F41A /* FacebookLoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177586E01E2C2F7F0031F41A /* FacebookLoggedInViewController.swift */; };
-		177586E31E2C2F970031F41A /* TwitterLoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177586E21E2C2F970031F41A /* TwitterLoggedInViewController.swift */; };
 		78374F4625A02DEE8E0C389C /* Pods_LoginScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765C4532F4A869C4E34DD88C /* Pods_LoginScreen.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +41,6 @@
 		177586DA1E2C2D730031F41A /* FacebookUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookUser.swift; sourceTree = "<group>"; };
 		177586DC1E2C2D7F0031F41A /* FacebookPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPost.swift; sourceTree = "<group>"; };
 		177586DE1E2C2DCF0031F41A /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
-		177586E01E2C2F7F0031F41A /* FacebookLoggedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoggedInViewController.swift; sourceTree = "<group>"; };
-		177586E21E2C2F970031F41A /* TwitterLoggedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterLoggedInViewController.swift; sourceTree = "<group>"; };
 		765C4532F4A869C4E34DD88C /* Pods_LoginScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBE4766B40AB4C53556DA02 /* Pods-LoginScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginScreen/Pods-LoginScreen.debug.xcconfig"; sourceTree = "<group>"; };
 		FA344B2888E22A5E7B1DB02C /* Pods-LoginScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginScreen/Pods-LoginScreen.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,8 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				177586CF1E2C02270031F41A /* LoginViewController.swift */,
-				177586E01E2C2F7F0031F41A /* FacebookLoggedInViewController.swift */,
-				177586E21E2C2F970031F41A /* TwitterLoggedInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -166,6 +160,7 @@
 				177586B31E2C00A20031F41A /* Resources */,
 				5839CC6F030D87EC12993666 /* [CP] Embed Pods Frameworks */,
 				F0D5D6DEAA2DC50741A23BE4 /* [CP] Copy Pods Resources */,
+				177586E41E2D4E950031F41A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -225,6 +220,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		177586E41E2D4E950031F41A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 7189842e0edc1f648a6e6e3c52978493bb12c759 3ce1a95baf59d87848375aad6dd8f274a073626fa720daacd2a771583b1b1f76";
+		};
 		5839CC6F030D87EC12993666 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,8 +286,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				177586D01E2C02270031F41A /* LoginViewController.swift in Sources */,
-				177586E31E2C2F970031F41A /* TwitterLoggedInViewController.swift in Sources */,
-				177586E11E2C2F7F0031F41A /* FacebookLoggedInViewController.swift in Sources */,
 				177586DD1E2C2D7F0031F41A /* FacebookPost.swift in Sources */,
 				177586D91E2C2D320031F41A /* FacebookAPIManager.swift in Sources */,
 				177586DF1E2C2DCF0031F41A /* NetworkingManager.swift in Sources */,
