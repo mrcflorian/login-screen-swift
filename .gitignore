@@ -13,7 +13,7 @@ LoginScreen/Pods
 LoginScreen/LoginScreen.xcodeproj/project.xcworkspace
 LoginScreen/LoginScreen.xcworkspace/
 LoginScreen/Podfile.lock
-
+LoginScreen/LoginScreen.xcodeproj/xcuserdata
 # Packages #
 ############
 # it's better to unpack these files and commit the raw source
