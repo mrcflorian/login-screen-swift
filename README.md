@@ -1,8 +1,8 @@
-<center>
+<p align="center">
 
 	<a href="http://iosapptemplates.com/templates/login-screen-in-swift-3-freebie/"><img src="http://iosapptemplates.com/wp-content/uploads/2017/01/ios-login-screen-template-swift-3.png" alt = "iOS Login Screen in Swift"/></a>
 
-</center>
+</p>
 
 ## About
 
