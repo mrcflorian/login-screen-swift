@@ -1,7 +1,13 @@
+<center>
+
+	<a href="http://iosapptemplates.com/templates/login-screen-in-swift-3-freebie/"><img src="http://iosapptemplates.com/wp-content/uploads/2017/01/ios-login-screen-template-swift-3.png" alt = "iOS Login Screen in Swift"/></a>
+
+</center>
+
 ## About
 
-This is a simple Swift 3 implementation of a Login Screen. It has support for signing in with
-Facebook and Twitter, as well as the classic email & password form.
+This is a simple iOS login screen written in Swift 3. It has support for <b>signing in with
+Facebook and Twitter</b>, as well as the classic email & password form.
 
 The template uses FacebookLogin and TwitterKit frameworks.
 
@@ -24,12 +30,12 @@ $ pod install
 If you're not familiar with Cocoapods, <a href="https://guides.cocoapods.org/using/getting-started.html">checkout their website</a>, to see how you can install it.
 
 
-Once the pods were installed properly, open LoginScreen.xcworkspace with Xcode and run the project.
+Once the pods were installed properly, open <b>LoginScreen.xcworkspace</b> with Xcode and run the project.
 
 Everything should be working fine. There's one more thing to do though, since the code is using
 some default Facebook & Twitter applications. You need to update the code so that it uses your apps.
 
-Open the Info.plist file (as source code) and update the following piece of code with your correct
+Open the <b>Info.plist</b> file (as source code) and update the following piece of code with your correct
 API keys:
 
 ```
