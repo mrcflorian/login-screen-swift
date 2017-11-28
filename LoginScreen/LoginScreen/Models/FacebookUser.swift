@@ -15,7 +15,7 @@ class FacebookUser {
 
     init (dictionary: [String: Any]) {
         self.firstName = dictionary["first_name"] as? String
-        self.lastName = dictionary["last_name"] as? String
+        self.lastName = dictionary["last_name"] as? String
         self.email = dictionary["email"] as? String
         self.id = dictionary["id"] as? String
         if let pictureDict = dictionary["picture"] as? [String: Any] {

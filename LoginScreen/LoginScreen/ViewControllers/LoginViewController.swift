@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
     @IBAction func didTapFacebookLoginButton(_ sender: FacebookLoginButton) {
         // Facebook login attempt
         let loginManager = LoginManager()
-        loginManager.logIn(readPermissions, viewController: self, completion: didReceiveFacebookLoginResult)
+        loginManager.logIn(readPermissions: readPermissions, viewController: self, completion: didReceiveFacebookLoginResult)
     }
 
     @IBAction func didTapTwitterLoginButton(_ sender: TwitterLoginButton) {

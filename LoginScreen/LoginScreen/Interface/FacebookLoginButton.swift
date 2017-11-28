@@ -8,7 +8,7 @@
 
 import UIKit
 
-let kFacebookLoginButtonBackgroundColor = UIColor(colorLiteralRed: 59/255, green: 89/255, blue: 153/255, alpha: 1)
+let kFacebookLoginButtonBackgroundColor = UIColor(displayP3Red: 59/255, green: 89/255, blue: 153/255, alpha: 1)
 let kFacebookLoginButtonTintColor = UIColor.white
 let kFacebookLoginButtonCornerRadius: CGFloat = 13.0
 
