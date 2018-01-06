@@ -39,7 +39,7 @@ class LoginViewController: UIViewController {
 
     @IBAction func didTapTwitterLoginButton(_ sender: TwitterLoginButton) {
         // Twitter login attempt
-        Twitter.sharedInstance().logIn(completion: { session, error in
+        TWTRTwitter.sharedInstance().logIn(completion: { session, error in
             if let session = session {
                 // Successful log in with Twitter
                 print("signed in as \(session.userName)");

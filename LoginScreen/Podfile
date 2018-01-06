@@ -12,7 +12,6 @@ target 'LoginScreen' do
 
   pod 'AFNetworking'
 
-  pod 'Fabric'
   pod 'TwitterKit'
   pod 'TwitterCore'
 
