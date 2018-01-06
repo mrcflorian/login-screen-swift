@@ -4,7 +4,7 @@
 
 ## About
 
-This is a simple iOS login screen written in Swift 3. It has support for <b>signing in with
+This is a simple iOS login screen written in Swift 4. It has support for <b>signing in with
 Facebook and Twitter</b>, as well as the classic email & password form.
 
 The template uses FacebookLogin and TwitterKit frameworks.
@@ -37,46 +37,29 @@ Open the <b>Info.plist</b> file (as source code) and update the following piece 
 API keys:
 
 ```
+<key>CFBundleURLTypes</key>
 <array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>fb285315185217069</string>
-			</array>
-		</dict>
-	</array>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>Fabric</key>
-	<dict>
-		<key>APIKey</key>
-		<string>7189842e0edc1f648a6e6e3c52978493bb12c759</string>
-		<key>Kits</key>
-		<array>
-			<dict>
-				<key>KitInfo</key>
-				<dict>
-					<key>consumerKey</key>
-					<string>9p0SO3sGDAhHu7uz5g9BF9on0</string>
-					<key>consumerSecret</key>
-					<string>7ozjHdTpgY3Szejy0R1rYZtFeIjMB50krpbba7b5ShVawlSxeP</string>
-				</dict>
-				<key>KitName</key>
-				<string>Twitter</string>
-			</dict>
-		</array>
-	</dict>
-	<key>FacebookAppID</key>
-	<string>285315185217069</string>
-	<key>FacebookDisplayName</key>
-	<string>iOSAppTemplates</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>fbapi</string>
-		<string>fb-messenger-api</string>
-		<string>fbauth2</string>
-		<string>fbshareextension</string>
-	</array>
+    <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+            <string>fb285315185217069</string>
+            <string>twitterkit-9p0SO3sGDAhHu7uz5g9BF9on0</string>
+        </array>
+    </dict>
+</array>
+<key>FacebookAppID</key>
+<string>285315185217069</string>
+<key>FacebookDisplayName</key>
+<string>iOSAppTemplates</string>
+<key>LSApplicationQueriesSchemes</key>
+<array>
+	<string>fbapi</string>
+	<string>fb-messenger-api</string>
+	<string>fbauth2</string>
+	<string>fbshareextension</string>
+    <string>twitter</string>
+    <string>twitterauth</string>
+</array>
 
 ```
 
