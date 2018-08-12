@@ -1,10 +1,10 @@
 <p align="center">
-	<a href="http://iosapptemplates.com/templates/login-screen-in-swift-3-freebie/"><img src="http://iosapptemplates.com/wp-content/uploads/2017/01/ios-login-screen-template-swift-3.png" width="25%" alt = "iOS Login Screen in Swift"/></a>
+    <a href="http://iosapptemplates.com/templates/login-screen-in-swift-3-freebie/"><img src="http://iosapptemplates.com/wp-content/uploads/2017/01/ios-login-screen-template-swift-3.png" width="25%" alt = "iOS Login Screen in Swift"/></a>
 </p>
 
 ## About
 
-This is a simple iOS login screen written in Swift 4. It has support for <b>signing in with
+This is a simple <a href="https://www.iosapptemplates.com/templates/iphone-login-screen-template-swift-3-freebie">iOS login screen written in Swift 4</a>. It has support for <b>signing in with
 Facebook and Twitter</b>, as well as the classic email & password form.
 
 The template uses FacebookLogin and TwitterKit frameworks.
@@ -53,10 +53,10 @@ API keys:
 <string>iOSAppTemplates</string>
 <key>LSApplicationQueriesSchemes</key>
 <array>
-	<string>fbapi</string>
-	<string>fb-messenger-api</string>
-	<string>fbauth2</string>
-	<string>fbshareextension</string>
+    <string>fbapi</string>
+    <string>fb-messenger-api</string>
+    <string>fbauth2</string>
+    <string>fbshareextension</string>
     <string>twitter</string>
     <string>twitterauth</string>
 </array>
