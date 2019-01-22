@@ -80,8 +80,8 @@ class LoginViewController: UIViewController {
 
     private func didLogin(method: String, info: String) {
         let message = "Successfully logged in with \(method). " + info
-        let alert = UIAlertController(title: "Success", message: message, preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler: nil))
+        let alert = UIAlertController(title: "Success", message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Done", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
 }

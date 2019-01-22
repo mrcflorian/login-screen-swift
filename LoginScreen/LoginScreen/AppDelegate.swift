@@ -17,12 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         TWTRTwitter.sharedInstance().start(withConsumerKey:"9p0SO3sGDAhHu7uz5g9BF9on0", consumerSecret:"7ozjHdTpgY3Szejy0R1rYZtFeIjMB50krpbba7b5ShVawlSxeP")
         return SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         if url.absoluteString.starts(with: "twitter") {
             return TWTRTwitter.sharedInstance().application(app, open: url, options: options)
         }
