@@ -6,7 +6,6 @@
 *.exe
 *.o
 *.so
-s
 
 # Pods
 LoginScreen/Pods
