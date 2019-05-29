@@ -69,7 +69,7 @@ class FacebookAPIManager {
                 newPosts.append(fbPost)
             }
         }
-        guard let paging = dictionary["paging"] as? [String: String], let next = paging["next"] as String?, next.characters.count > 0 else {
+        guard let paging = dictionary["paging"] as? [String: String], let next = paging["next"] as String?, next.count > 0 else {
             completion(posts + newPosts)
             return
         }

@@ -2,6 +2,7 @@
     <a href="http://iosapptemplates.com/templates/login-screen-in-swift-3-freebie/"><img src="http://iosapptemplates.com/wp-content/uploads/2017/01/ios-login-screen-template-swift-3.png" width="25%" alt = "iOS Login Screen in Swift"/></a>
 </p>
 
+** This projects has been updated to Swift 5 and Xcode 10.2. **
 ## About
 
 This is a simple <a href="https://www.iosapptemplates.com/templates/iphone-login-screen-template-swift-3-freebie">iOS login screen written in Swift 5</a>. It has support for <b>signing in with
@@ -22,7 +23,7 @@ frameworks from Twitter and Facebook). You can simply do this by running the fol
 in the root folder of the project (where the Pods file lives):
 
 ```
-$ pod install
+$ pod update
 ```
 
 If you're not familiar with Cocoapods, <a href="https://guides.cocoapods.org/using/getting-started.html">checkout their website</a>, to see how you can install it.
