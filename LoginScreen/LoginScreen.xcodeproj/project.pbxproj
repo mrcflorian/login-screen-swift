@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		177586B91E2C00A20031F41A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177586B81E2C00A20031F41A /* AppDelegate.swift */; };
-		177586BB1E2C00A20031F41A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177586BA1E2C00A20031F41A /* ViewController.swift */; };
-		177586BE1E2C00A20031F41A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177586BC1E2C00A20031F41A /* Main.storyboard */; };
 		177586C01E2C00A20031F41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177586BF1E2C00A20031F41A /* Assets.xcassets */; };
 		177586C31E2C00A20031F41A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177586C11E2C00A20031F41A /* LaunchScreen.storyboard */; };
 		177586CB1E2C01710031F41A /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177586CA1E2C01710031F41A /* LoginScreen.storyboard */; };
@@ -28,8 +26,6 @@
 /* Begin PBXFileReference section */
 		177586B51E2C00A20031F41A /* LoginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177586B81E2C00A20031F41A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		177586BA1E2C00A20031F41A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		177586BD1E2C00A20031F41A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		177586BF1E2C00A20031F41A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		177586C21E2C00A20031F41A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		177586C41E2C00A20031F41A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,8 +82,6 @@
 				177586CE1E2C02060031F41A /* ViewControllers */,
 				177586CC1E2C01A20031F41A /* Interface */,
 				177586B81E2C00A20031F41A /* AppDelegate.swift */,
-				177586BA1E2C00A20031F41A /* ViewController.swift */,
-				177586BC1E2C00A20031F41A /* Main.storyboard */,
 				177586BF1E2C00A20031F41A /* Assets.xcassets */,
 				177586C11E2C00A20031F41A /* LaunchScreen.storyboard */,
 				177586C41E2C00A20031F41A /* Info.plist */,
@@ -217,7 +211,6 @@
 				177586C31E2C00A20031F41A /* LaunchScreen.storyboard in Resources */,
 				177586C01E2C00A20031F41A /* Assets.xcassets in Resources */,
 				177586CB1E2C01710031F41A /* LoginScreen.storyboard in Resources */,
-				177586BE1E2C00A20031F41A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +223,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
@@ -257,7 +250,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A54275F5E87AA1C12B33AF58 /* [CP] Check Pods Manifest.lock */ = {
@@ -284,7 +277,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-resources.sh",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -293,7 +286,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -310,7 +303,6 @@
 				177586D41E2C0B360031F41A /* FacebookLoginButton.swift in Sources */,
 				177586D21E2C0B1F0031F41A /* LoginButton.swift in Sources */,
 				177586E61E2D76E20031F41A /* LoginTextField.swift in Sources */,
-				177586BB1E2C00A20031F41A /* ViewController.swift in Sources */,
 				177586B91E2C00A20031F41A /* AppDelegate.swift in Sources */,
 				177586DB1E2C2D730031F41A /* FacebookUser.swift in Sources */,
 				177586D61E2C0B470031F41A /* TwitterLoginButton.swift in Sources */,
@@ -320,14 +312,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		177586BC1E2C00A20031F41A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				177586BD1E2C00A20031F41A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		177586C11E2C00A20031F41A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
