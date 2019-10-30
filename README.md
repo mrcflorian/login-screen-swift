@@ -2,11 +2,11 @@
     <a href="http://iosapptemplates.com/templates/login-screen-in-swift-3-freebie/"><img src="http://iosapptemplates.com/wp-content/uploads/2017/01/ios-login-screen-template-swift-3.png" width="25%" alt = "iOS Login Screen in Swift"/></a>
 </p>
 
-** This projects has been updated to Swift 5 and Xcode 10.2. **
+** This projects has been updating to Swift 5 and Xcode 10.2. **
 ## About
 
 This is a simple <a href="https://www.iosapptemplates.com/templates/iphone-login-screen-template-swift-3-freebie">iOS login screen written in Swift 5</a>. It has support for <b>signing in with
-Facebook and Twitter</b>, as well as the classic email & password form.
+Facebook, Google and specially Apple</b>, as well as the classic email & password form.
 
 The template uses FacebookLogin and TwitterKit frameworks.
 
