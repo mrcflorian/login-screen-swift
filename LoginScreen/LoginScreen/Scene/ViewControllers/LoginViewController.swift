@@ -14,7 +14,6 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController {
   
-  
   @IBOutlet weak var userNameTextField: CustomTextField!
   @IBOutlet weak var passwordTextField: CustomTextField!
   @IBOutlet weak var signInButton: UIButton!
