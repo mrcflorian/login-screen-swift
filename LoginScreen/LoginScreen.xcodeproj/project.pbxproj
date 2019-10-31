@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11FAD5DADE455C67651FCEA5 /* Pods_LoginScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B950E707CB11C9DE6BD1EAFB /* Pods_LoginScreen.framework */; };
 		FA1CE22A23682513002A63FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE22923682513002A63FF /* AppDelegate.swift */; };
 		FA1CE22C23682513002A63FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE22B23682513002A63FF /* LoginViewController.swift */; };
 		FA1CE22F23682513002A63FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1CE22D23682513002A63FF /* Main.storyboard */; };
@@ -18,11 +19,12 @@
 		FA1CE24923684E64002A63FF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE24823684E64002A63FF /* LoginViewModel.swift */; };
 		FA1CE24C23684EAE002A63FF /* UserInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE24B23684EAE002A63FF /* UserInApp.swift */; };
 		FA1CE25023690430002A63FF /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE24F23690430002A63FF /* LoginService.swift */; };
-		FA1CE2522369075B002A63FF /* AppleLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE2512369075B002A63FF /* AppleLoginService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		30EE21512369106A002D0CD9 /* LoginScreen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginScreen.entitlements; sourceTree = "<group>"; };
+		9D6716E3580BFC95E7BF7AEC /* Pods-LoginScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen.debug.xcconfig"; path = "Target Support Files/Pods-LoginScreen/Pods-LoginScreen.debug.xcconfig"; sourceTree = "<group>"; };
+		B950E707CB11C9DE6BD1EAFB /* Pods_LoginScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86D2F942388C6C840D38A40 /* Pods-LoginScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen.release.xcconfig"; path = "Target Support Files/Pods-LoginScreen/Pods-LoginScreen.release.xcconfig"; sourceTree = "<group>"; };
 		FA1CE22623682513002A63FF /* LoginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1CE22923682513002A63FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA1CE22B23682513002A63FF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -36,7 +38,6 @@
 		FA1CE24823684E64002A63FF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FA1CE24B23684EAE002A63FF /* UserInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInApp.swift; sourceTree = "<group>"; };
 		FA1CE24F23690430002A63FF /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
-		FA1CE2512369075B002A63FF /* AppleLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FAD5DADE455C67651FCEA5 /* Pods_LoginScreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F56F842CB699DB5680A3C05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B950E707CB11C9DE6BD1EAFB /* Pods_LoginScreen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAF0318164E58C3EE5EE6DAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D6716E3580BFC95E7BF7AEC /* Pods-LoginScreen.debug.xcconfig */,
+				E86D2F942388C6C840D38A40 /* Pods-LoginScreen.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA1CE21D23682513002A63FF = {
 			isa = PBXGroup;
 			children = (
 				FA1CE22823682513002A63FF /* LoginScreen */,
 				FA1CE22723682513002A63FF /* Products */,
+				BAF0318164E58C3EE5EE6DAF /* Pods */,
+				0F56F842CB699DB5680A3C05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,7 +165,6 @@
 		FA1CE24A23684E99002A63FF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				30EE21512369106A002D0CD9 /* LoginScreen.entitlements */,
 				FA1CE24B23684EAE002A63FF /* UserInApp.swift */,
 			);
 			path = Model;
@@ -162,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				FA1CE24F23690430002A63FF /* LoginService.swift */,
-				FA1CE2512369075B002A63FF /* AppleLoginService.swift */,
 			);
 			path = LoginService;
 			sourceTree = "<group>";
@@ -174,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA1CE23823682515002A63FF /* Build configuration list for PBXNativeTarget "LoginScreen" */;
 			buildPhases = (
+				26C20F51B00CA8145B795839 /* [CP] Check Pods Manifest.lock */,
 				FA1CE22223682513002A63FF /* Sources */,
 				FA1CE22323682513002A63FF /* Frameworks */,
 				FA1CE22423682513002A63FF /* Resources */,
+				AAF21C0C817077E34793B1A3 /* [CP] Embed Pods Frameworks */,
+				66B473913A757134166DB05D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +256,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26C20F51B00CA8145B795839 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginScreen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66B473913A757134166DB05D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF21C0C817077E34793B1A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginScreen/Pods-LoginScreen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA1CE22223682513002A63FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -245,7 +326,6 @@
 				FA1CE24C23684EAE002A63FF /* UserInApp.swift in Sources */,
 				FA1CE24923684E64002A63FF /* LoginViewModel.swift in Sources */,
 				FA1CE2422368275D002A63FF /* CustomTextField.swift in Sources */,
-				FA1CE2522369075B002A63FF /* AppleLoginService.swift in Sources */,
 				FA1CE25023690430002A63FF /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +470,7 @@
 		};
 		FA1CE23923682515002A63FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D6716E3580BFC95E7BF7AEC /* Pods-LoginScreen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LoginScreen/LoginScreen.entitlements;
@@ -412,6 +493,7 @@
 		};
 		FA1CE23A23682515002A63FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E86D2F942388C6C840D38A40 /* Pods-LoginScreen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LoginScreen/LoginScreen.entitlements;

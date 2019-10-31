@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 enum LoginType: String {
   case normal = "Sign In normally"
   case facebook = "Facebook"
@@ -18,53 +19,14 @@ enum LoginType: String {
   }
 }
 
-protocol UserProtocol {
-  var username: String? { get set }
-  var password: String? { get set }
-}
-
-struct User: UserProtocol {
+struct User {
   var username: String?
   var password: String?
+  var token: String?
   
-  init(username: String?, password: String?) {
+  init(username: String?, password: String?, token: String? = nil) {
     self.username = username
     self.password = password
-  }
-}
-
-struct GoogleUser: UserProtocol {
-  var username: String?
-  var password: String?
-  var googleToken: String?
-  
-  init(username: String?, password: String?, googleToken: String?) {
-    self.username = username
-    self.password = password
-    self.googleToken = googleToken
-  }
-}
-
-struct FacebookUser: UserProtocol {
-  var username: String?
-  var password: String?
-  var facebookToken: String?
-  
-  init(username: String?, password: String?, facebookToken: String?) {
-    self.username = username
-    self.password = password
-    self.facebookToken = facebookToken
-  }
-}
-
-struct AppleUser: UserProtocol {
-  var username: String?
-  var password: String?
-  var appleToken: String?
-  
-  init(username: String?, password: String?, appleToken: String?) {
-    self.username = username
-    self.password = password
-    self.appleToken = appleToken
+    self.token = token
   }
 }
