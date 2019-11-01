@@ -63,6 +63,9 @@ API keys:
 </array>
 
 ```
+For Sign in with apple, you need to configure something on Certificates, Identifiers and Profiles. 
+https://www.iosapptemplates.com/blog/ios-development/sign-in-with-apple-swift 
+Check out the link above and do step 1 and step 2.
 
 ## Documentation
 
