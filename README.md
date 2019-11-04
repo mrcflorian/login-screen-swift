@@ -2,13 +2,13 @@
     <a href="http://iosapptemplates.com/templates/login-screen-in-swift-3-freebie/"><img src="http://iosapptemplates.com/wp-content/uploads/2017/01/ios-login-screen-template-swift-3.png" width="25%" alt = "iOS Login Screen in Swift"/></a>
 </p>
 
-** This projects has been updating to Swift 5 and Xcode 10.2. **
+** This projects has been updated to Swift 5 and Xcode 11.2 **
 ## About
 
 This is a simple <a href="https://www.iosapptemplates.com/templates/iphone-login-screen-template-swift-3-freebie">iOS login screen written in Swift 5</a>. It has support for <b>signing in with
 Facebook, Google and specially Apple</b>, as well as the classic email & password form.
 
-The template uses FacebookLogin and TwitterKit frameworks.
+The template uses FacebookLogin and GoogleSignin frameworks, installed with Cocoapods.
 
 ## Installation and configuration
 
@@ -32,7 +32,7 @@ If you're not familiar with Cocoapods, <a href="https://guides.cocoapods.org/usi
 Once the pods were installed properly, open <b>LoginScreen.xcworkspace</b> with Xcode and run the project.
 
 Everything should be working fine. There's one more thing to do though, since the code is using
-some default Facebook & Twitter applications. You need to update the code so that it uses your apps.
+some default Facebook & Google applications. You need to update the code so that it uses your apps.
 
 Open the <b>Info.plist</b> file (as source code) and update the following piece of code with your correct
 API keys:
@@ -44,7 +44,6 @@ API keys:
         <key>CFBundleURLSchemes</key>
         <array>
             <string>fb285315185217069</string>
-            <string>twitterkit-9p0SO3sGDAhHu7uz5g9BF9on0</string>
         </array>
     </dict>
 </array>
