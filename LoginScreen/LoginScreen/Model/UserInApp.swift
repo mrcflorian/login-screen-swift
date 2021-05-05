@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+// model 
 enum LoginType: String {
   case normal = "Sign In normally"
   case facebook = "Facebook"
