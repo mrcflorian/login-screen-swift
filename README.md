@@ -6,7 +6,7 @@
 
 ## About
 
-This is a simple <a href="https://www.iosapptemplates.com/templates/iphone-login-screen-template-swift-3-freebie">iOS login screen written in Swift 5</a>. It has support for <b>signing in with
+This is a simple <a href="https://iosapptemplates.com/templates/iphone-login-screen-template-swift-3-freebie">iOS login screen written in Swift 5</a>. It has support for <b>signing in with
 Facebook, Google and specially Apple</b>, as well as the classic email & password form.
 
 The template uses FacebookLogin and GoogleSignin frameworks, installed with Cocoapods.
@@ -28,7 +28,6 @@ $ pod update
 ```
 
 If you're not familiar with Cocoapods, <a href="https://guides.cocoapods.org/using/getting-started.html">checkout their website</a>, to see how you can install it.
-
 
 Once the pods were installed properly, open <b>LoginScreen.xcworkspace</b> with Xcode and run the project.
 
@@ -63,8 +62,9 @@ API keys:
 </array>
 
 ```
-For Sign in with apple, you need to configure something on Certificates, Identifiers and Profiles. 
-https://www.iosapptemplates.com/blog/ios-development/sign-in-with-apple-swift 
+
+For Sign in with apple, you need to configure something on Certificates, Identifiers and Profiles.
+https://www.iosapptemplates.com/blog/ios-development/sign-in-with-apple-swift
 Check out the link above and do step 1 and step 2.
 
 ## Documentation

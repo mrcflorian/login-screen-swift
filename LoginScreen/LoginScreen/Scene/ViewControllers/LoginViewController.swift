@@ -121,23 +121,26 @@ extension LoginViewController {
 }
 
 // MARK: - Login with google
-extension LoginViewController: GIDSignInDelegate {
+extension LoginViewController {
   
   /// Our custom functions
   private func handleGoogleAuthentication() {
-    GIDSignIn.sharedInstance()?.clientID = "350995020018-79bumcion7icu71tvev6qie3nos6bul3.apps.googleusercontent.com"
-    GIDSignIn.sharedInstance()?.presentingViewController = self
-    GIDSignIn.sharedInstance()?.delegate = self
-    GIDSignIn.sharedInstance()?.signIn()
+      let configuration = GIDConfiguration(clientID: "350995020018-79bumcion7icu71tvev6qie3nos6bul3.apps.googleusercontent.com")
+
+      GIDSignIn.sharedInstance.signIn(with: configuration, presenting: self) { [unowned self] user, error in
+          if error != nil {
+              showPopup(isSuccess: false, type: .google)
+          } else if let user = user {
+              viewModel.login(username: user.profile?.name ?? "no name", password: "", type: .google)
+          } else {
+              showPopup(isSuccess: false, type: .google)
+          }
+      }
   }
   
   /// Required functions from protocols
   func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-    if error != nil {
-      showPopup(isSuccess: false, type: .google)
-    } else {
-      viewModel.login(username: user.profile.name, password: "", type: .google)
-    }
+
   }
 }
 
