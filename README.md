@@ -2,7 +2,7 @@
     <a href="http://iosapptemplates.com/templates/login-screen-in-swift-3-freebie/"><img src="http://iosapptemplates.com/wp-content/uploads/2017/01/ios-login-screen-template-swift-3.png" width="25%" alt = "iOS Login Screen in Swift"/></a>
 </p>
 
-**This project has been updated to Swift 5 and Xcode 11.2**
+**This project has been updated to SwiftUI and latest Xcode**
 
 ## About
 
